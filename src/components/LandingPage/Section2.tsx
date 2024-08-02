@@ -28,8 +28,8 @@ const branchs = [
 export default function Seciton2() {
   return (
     <div className="flex flex-col w-full max-w-[1500px] bg-gray-50 min-h-screen">
-      <div className="w-full flex flex-col lg:flex-row h-1/2">
-        <div className="w-full lg:w-1/2 h-full relative">
+      <div className="w-full grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full  flex-col lg:flex-row ">
+        <div className="w-full  h-full relative">
           <Image
             src={building}
             alt={branchs[0].country}
@@ -37,7 +37,7 @@ export default function Seciton2() {
             objectFit="cover"
           />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col gap-4 items-end justify-between pt-10 p-8 bg-white ">
+        <div className="w-full flex flex-col gap-4 items-end justify-between pt-10 p-8 bg-white ">
           <p className="text-5xl font-extralight tracking-wider text-white w-full text-end border p-3 bg-[#BADBED]">
             ABOUT US
           </p>
@@ -53,8 +53,9 @@ export default function Seciton2() {
           </button>
         </div>
       </div>
-      <div className="w-full h-[50vh] bg-red-900 flex">
-        <div className="bg-white w-2/3 h-full flex flex-col justify-between p-10 gap-4 ">
+
+      <div className="w-full h-[50vh] bg-red-900 flex flex-col md:flex-row">
+        <div className="bg-white w-full  md:w-2/3 h-full flex flex-col justify-between p-10 gap-4 ">
           <div>
             <p className="text-2xl text-[#83B7D4] ">CONTACT US</p>
             <p className="text-gray-400">Drop us a line!</p>
@@ -80,7 +81,7 @@ export default function Seciton2() {
             SEND
           </button>
         </div>
-        <div className="bg-white w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
+        <div className="bg-white w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
           <div className="text-end flex flex-col ">
             <p className="text-2xl text-[#83B7D4]">Email</p>
             <p className="text-gray-400">contact@payyservices.com</p>
