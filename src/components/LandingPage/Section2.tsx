@@ -54,8 +54,8 @@ export default function Seciton2() {
         </div>
       </div>
 
-      <div className="w-full h-[50vh] bg-red-900 flex flex-col md:flex-row">
-        <div className="bg-white w-full  md:w-2/3 h-full flex flex-col justify-between p-10 gap-4 ">
+      <div className="w-full bg-red-900 flex flex-col md:flex-row">
+        <div className="bg-white w-full   md:w-2/3  flex flex-col justify-start p-10 gap-4 ">
           <div>
             <p className="text-2xl text-[#83B7D4] ">CONTACT US</p>
             <p className="text-gray-400">Drop us a line!</p>
@@ -73,8 +73,8 @@ export default function Seciton2() {
           />
           <textarea
             placeholder="Message"
-            rows={4}
-            className="w-full p-3 px-5 bg-gray-100 rounded-lg focus:outline-gray-300"
+            rows={5}
+            className="w-full min-h-[200px] p-3 px-5 bg-gray-100 rounded-lg focus:outline-gray-300"
             style={{ resize: "none" }}
           />
           <button className="bg-[#83B7D4] p-3 px-10 mt-10 rounded-lg text-white">
