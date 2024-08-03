@@ -81,10 +81,10 @@ export default function Seciton2() {
             SEND
           </button>
         </div>
-        <div className="bg-white w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
+        <div className="bg-[#83B7D4] w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
           <div className="text-end flex flex-col ">
-            <p className="text-2xl text-[#83B7D4]">Email</p>
-            <p className="text-gray-400">contact@payyservices.com</p>
+            <p className="text-2xl text-white">Email</p>
+            <p className="text-gray-100">contact@payyservices.com</p>
           </div>
         </div>
       </div>

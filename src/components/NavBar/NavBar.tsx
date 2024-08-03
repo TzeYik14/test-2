@@ -11,7 +11,7 @@ const link = [
 ];
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-white w-screen p-5 shadow-md fixed z-10">
+    <nav className="bg-white w-screen p-5 shadow-md fixed z-20">
       <div className="container mx-auto flex justify-between items-center max-w-[900px] text-sm font-light">
         <div className="font-bold text-lg">
             <Image src={logo} alt="Payy" width={70} height={70} />
