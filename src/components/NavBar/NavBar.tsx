@@ -6,7 +6,7 @@ const link = [
   { href: "/", label: "Home" },
   { href: "/our-services", label: "Our Services" },
   { href: "/our-app", label: "OUR APP" },
-  { href: "/contact-us", label: "Privacy Policies" },
+  // { href: "/contact-us", label: "Privacy Policies" },
   { href: "/contact-us", label: "Contact Us" },
 ];
 const NavBar: React.FC = () => {
