@@ -4,7 +4,7 @@ import logo from '../../assets/payy.png'
 import Image from "next/image";
 const link = [
   { href: "/", label: "Home" },
-  { href: "/ourservices", label: "Our Services" },
+  { href: "/our-services", label: "Our Services" },
   { href: "/our-app", label: "OUR APP" },
   { href: "/contact-us", label: "Privacy Policies" },
   { href: "/contact-us", label: "Contact Us" },
