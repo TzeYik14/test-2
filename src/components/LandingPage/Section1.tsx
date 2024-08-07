@@ -29,7 +29,7 @@ export default function Seciton1() {
   return (
     <div className=" flex flex-col w-full max-w-[1500px] ">
       {/* Header Section */}
-      <div className="relative bg-cover bg-center h-[55vh] bg-white overflow-hidden transition-all duration-300 ">
+      <div className="relative bg-cover bg-center h-[80vh] md:h-[55vh] bg-white overflow-hidden transition-all duration-300 ">
         <div className="absolute inset-0 w-[70vw] bg-right bg-contain  bg-no-repeat z-10 md:z-0 opacity-80 md:opacity-100  bg-sail-900 stroke-none " />
         <div className="absolute inset-0 flex flex-col justify-center items-start pl-10 md:pl-[125px] text-left text-white shadow-lg z-20">
           <h3 className="hidden md:block md:text-base tracking-wide uppercase mb-4">
