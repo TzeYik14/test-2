@@ -53,8 +53,8 @@ const OurServices: React.FC = () => {
       <h1 className="flex items-center text-5xl font-light pl-10 w-full py-3 text-gray-400">
         PREVIEWS <hr className="w-full ml-10 border-2 border-gray-300" />
       </h1>
-      <div className="flex flex-col  justify-center  bg-white w-full ">
-        <div className="p-10 text-xl font-light w-full">
+      <div className="flex flex-col  justify-center  bg-white w-full py-10">
+        <div className="p-10 text-xl font-light w-full ">
           <p className="text-3xl uppercase font-semibold mb-10 text-sail-300">
             Why Us?
           </p>
@@ -64,15 +64,15 @@ const OurServices: React.FC = () => {
             iPhone or iPad.
           </p>
         </div>
-
-        <Swiper
+      <div className="md:hidden">
+               <Swiper
           modules={[Pagination, Autoplay]} // Removed Navigation module
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}
-          className="w-1/2 h-full object-cover max-w-[300px]"
+          className="w-1/2 h-full object-cover max-w-[300px] md:hidden"
         >
           <SwiperSlide>
             <Image
@@ -115,6 +115,22 @@ const OurServices: React.FC = () => {
             />
           </SwiperSlide>
         </Swiper>
+      </div>
+ 
+        <div className=" w-full p-10 gap-10 hidden md:flex">
+            <Image
+              src={payy2}
+              alt="payy2"
+            />
+            <Image
+              src={payy3}
+              alt="payy3"
+            />
+            <Image
+              src={payy1}
+              alt="payy4"
+            />
+        </div>
       </div>
     </div>
   );

@@ -28,8 +28,12 @@ const branchs = [
 export default function Seciton2() {
   return (
     <div className="flex flex-col w-full max-w-[1500px] bg-gray-50 min-h-screen">
-      <div className="w-full grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full  flex-col lg:flex-row ">
-        <div className="w-full  h-full relative">
+       <p className="text-5xl font-extralight tracking-wider text-sail-300 w-full text-start px-14 pt-10 mt-10 bg-white">
+            ABOUT US
+          </p>
+      <div className="w-full grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full  flex-col lg:flex-row p-10 bg-white ">
+    
+        <div className="w-full  h-full relative ">
           <Image
             src={building}
             alt={branchs[0].country}
@@ -37,10 +41,9 @@ export default function Seciton2() {
             objectFit="cover"
           />
         </div>
+
         <div className="w-full flex flex-col gap-4 items-end justify-between pt-10 p-8 bg-white ">
-          <p className="text-5xl font-extralight tracking-wider text-white w-full text-end border p-3 bg-sail-300">
-            ABOUT US
-          </p>
+       
           <p className="w-[80%] uppercase font-extralight text-gray-400 text-end">
             Welcome We offer a range of innovative financial technology products
             and services to help businesses and individuals achieve their
@@ -52,14 +55,14 @@ export default function Seciton2() {
             FIND OUT MORE
           </button>
         </div>
-      </div>
+      </div>  
+      <p className="text-5xl font-extralight tracking-wider text-sail-300 w-full text-start px-14 py-10 mt-10 bg-white">
+            CONTACT US
+          </p>
 
-      <div className="w-full bg-red-900 flex flex-col md:flex-row">
+      <div className="w-full  flex flex-col md:flex-row">
         <div className="bg-white w-full   md:w-2/3  flex flex-col justify-start p-10 gap-4 ">
-          <div>
-            <p className="text-2xl text-[#83B7D4] ">CONTACT US</p>
-            <p className="text-gray-400">Drop us a line!</p>
-          </div>
+    
 
           <input
             type="text"
