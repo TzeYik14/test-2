@@ -19,7 +19,7 @@ import { Pagination, Autoplay } from "swiper/modules"; // Removed Navigation mod
 const OurServices: React.FC = () => {
   return (
     <div className="flex w-full flex-col items-center md:items-start justify-start pt-20 min-h-screen max-w-[1200px] gap-4">
-      <h1 className="text-5xl font-light pl-10 bg-[#BADBED] w-full py-3 text-white">
+      <h1 className="text-5xl font-light pl-10 bg-sail-300 w-full py-3 text-white">
         OUR APPS
       </h1>
       <div className="w-full flex flex-col md:flex-row">
@@ -34,8 +34,8 @@ const OurServices: React.FC = () => {
           />
         </div>
 
-        <div className="w-full md:w-full text-gray-500 min-h-[500px] flex flex-col gap-3 justify-start items-end text-end p-10 bg-white">
-          <div className="text-4xl uppercase">PayyRemit App</div>
+        <div className="w-full md:w-full text-gray-500  flex flex-col gap-3 justify-start items-end text-end p-10 bg-white">
+          <div className="text-4xl uppercase text-sail-300">PayyRemit App</div>
           <div className="flex flex-col gap-1">
             <p className="text-xl font-medium">Multi-currency</p>
             <p>Refer rates by various base currency</p>
@@ -51,9 +51,20 @@ const OurServices: React.FC = () => {
         </div>
       </div>
       <h1 className="flex items-center text-5xl font-light pl-10 w-full py-3 text-gray-400">
-        PREVIEWS{" "}<hr className="w-full ml-10 border-2 border-gray-300"/>
+        PREVIEWS <hr className="w-full ml-10 border-2 border-gray-300" />
       </h1>
-      <div className="flex justify-center bg-white w-full">
+      <div className="flex flex-col  justify-center  bg-white w-full ">
+        <div className="p-10 text-xl font-light w-full">
+          <p className="text-3xl uppercase font-semibold mb-10 text-sail-300">
+            Why Us?
+          </p>
+          <p>
+            Send money overseas with ease and confidence! Our remittance app for
+            iOS offers fast, secure, and affordable transfers - all from your
+            iPhone or iPad.
+          </p>
+        </div>
+
         <Swiper
           modules={[Pagination, Autoplay]} // Removed Navigation module
           spaceBetween={30}
@@ -61,7 +72,7 @@ const OurServices: React.FC = () => {
           loop={true}
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}
-          className="max-w-[400px] h-full object-cover"
+          className="w-1/2 h-full object-cover max-w-[300px]"
         >
           <SwiperSlide>
             <Image

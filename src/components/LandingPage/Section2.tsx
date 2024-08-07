@@ -38,7 +38,7 @@ export default function Seciton2() {
           />
         </div>
         <div className="w-full flex flex-col gap-4 items-end justify-between pt-10 p-8 bg-white ">
-          <p className="text-5xl font-extralight tracking-wider text-white w-full text-end border p-3 bg-[#BADBED]">
+          <p className="text-5xl font-extralight tracking-wider text-white w-full text-end border p-3 bg-sail-300">
             ABOUT US
           </p>
           <p className="w-[80%] uppercase font-extralight text-gray-400 text-end">
@@ -77,11 +77,11 @@ export default function Seciton2() {
             className="w-full min-h-[200px] p-3 px-5 bg-gray-100 rounded-lg focus:outline-gray-300"
             style={{ resize: "none" }}
           />
-          <button className="bg-[#83B7D4] p-3 px-10 mt-10 rounded-lg text-white">
+          <button className="bg-sail-300 p-3 px-10 mt-10 rounded-lg text-white">
             SEND
           </button>
         </div>
-        <div className="bg-[#83B7D4] w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
+        <div className="bg-sail-300 w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
           <div className="text-end flex flex-col ">
             <p className="text-2xl text-white">Email</p>
             <p className="text-gray-100">contact@payyservices.com</p>

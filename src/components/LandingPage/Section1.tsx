@@ -3,6 +3,7 @@ import fintechImage from "@/assets/fintech.png"; // Ensure the path is correct
 import malaysia from "@/assets/malaysia.png";
 import indonesia from "@/assets/indonesia.png";
 import singapore from "@/assets/singapore.jpg";
+import banner from '@/assets/banner.png';
 import { FaChevronRight } from "react-icons/fa";
 const branchs = [
   {
@@ -30,13 +31,12 @@ export default function Seciton1() {
       {/* Header Section */}
       <div className="relative bg-cover bg-center h-[60vh] overflow-hidden ">
         <div
-          className="absolute inset-0 bg-cover bg-center "
+          className="absolute inset-0 bg-right bg-contain  bg-no-repeat  bg-sail-500 stroke-none md:blur-none blur-sm"
           style={{
-            backgroundImage: `url(${fintechImage.src})`,
-            filter: "blur(3px)",
+            backgroundImage: `url(${banner.src})`,
           }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-25"></div>
+          <div className="absolute inset-0 bg-opacity-25 bg-black md:bg-none md:bg-opacity-0"></div>
         </div>
 
         {/* Text Overlay */}

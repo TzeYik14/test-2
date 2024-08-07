@@ -4,7 +4,7 @@ import malaysia from "../../assets/malaysia.png";
 const OurServices = () => {
   return (
     <div className="flex w-full flex-col items-center md:items-start justify-start pt-20 min-h-screen max-w-[1200px]">
-      <h1 className="text-5xl mb-10 font-light pl-10 bg-[#BADBED] text-white w-full py-4">OUR SERVICES</h1>
+      <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-300 text-white w-full py-4">OUR SERVICES</h1>
       
       <div className="w-full flex relative">
         <div

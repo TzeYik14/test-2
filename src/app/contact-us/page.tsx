@@ -3,7 +3,7 @@ import React from 'react';
 export default function ContactUs() {
   return (
     <div className="flex flex-col w-full max-w-[1500px] bg-gray-50 min-h-screen mt-14">
-      <h1 className="text-5xl mb-10 font-light pl-10 bg-[#BADBED] text-white w-full py-4">
+      <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-300 text-white w-full py-4">
         CONTACT US
       </h1>
       <form target="_blank" action="https://formsubmit.co/artpopor@gmail.com" method="POST">
