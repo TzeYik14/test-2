@@ -3,6 +3,7 @@ import fintechImage from "@/assets/fintech.png"; // Ensure the path is correct
 import malaysia from "@/assets/malaysia.png";
 import indonesia from "@/assets/indonesia.png";
 import singapore from "@/assets/singapore.jpg";
+import ContactUs from "@/app/contact-us/page";
 import building from "@/assets/building.png";
 import { FaChevronRight } from "react-icons/fa";
 const branchs = [
@@ -28,10 +29,10 @@ const branchs = [
 export default function Seciton2() {
   return (
     <div className="flex flex-col w-full max-w-[1500px] bg-gray-50 min-h-screen">
-       <p className="text-5xl font-extralight tracking-wider text-sail-300 w-full text-start px-14 pt-10 mt-10 bg-white">
+       {/* <p className="text-5xl font-extralight tracking-wider text-sail-300 w-full text-start px-14 pt-10 mt-10 bg-white">
             ABOUT US
-          </p>
-      <div className="w-full grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full  flex-col lg:flex-row p-10 bg-white ">
+          </p> */}
+      {/* <div className="w-full grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 h-full  flex-col lg:flex-row p-10 bg-white ">
     
         <div className="w-full  h-full relative ">
           <Image
@@ -55,41 +56,13 @@ export default function Seciton2() {
             FIND OUT MORE
           </button>
         </div>
-      </div>  
-      <p className="text-5xl font-extralight tracking-wider text-sail-300 w-full text-start px-14 py-10 mt-10 bg-white">
-            CONTACT US
-          </p>
+      </div>   */}
+    
+        
+
 
       <div className="w-full  flex flex-col md:flex-row">
-        <div className="bg-white w-full   md:w-2/3  flex flex-col justify-start p-10 gap-4 ">
-    
-
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-full p-3 px-5 bg-gray-100 rounded-lg focus:outline-gray-300"
-          />
-          <input
-            type="text"
-            placeholder="Email*"
-            className="w-full p-3 px-5 bg-gray-100 rounded-lg focus:outline-gray-300"
-          />
-          <textarea
-            placeholder="Message"
-            rows={5}
-            className="w-full min-h-[200px] p-3 px-5 bg-gray-100 rounded-lg focus:outline-gray-300"
-            style={{ resize: "none" }}
-          />
-          <button className="bg-sail-300 p-3 px-10 mt-10 rounded-lg text-white">
-            SEND
-          </button>
-        </div>
-        <div className="bg-sail-300 w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4 ">
-          <div className="text-end flex flex-col ">
-            <p className="text-2xl text-white">Email</p>
-            <p className="text-gray-100">contact@payyservices.com</p>
-          </div>
-        </div>
+      <ContactUs></ContactUs>
       </div>
    
     </div>

@@ -1,65 +1,71 @@
 import Image from "next/image";
-import fintechImage from "@/assets/fintech.png"; // Ensure the path is correct
-import malaysia from "@/assets/malaysia.png";
-import indonesia from "@/assets/indonesia.png";
-import singapore from "@/assets/singapore.jpg";
+// import fintechImage from "@/assets/fintech.png"; // Ensure the path is correct
+// import malaysia from "@/assets/malaysia.png";
+// import indonesia from "@/assets/indonesia.png";
+// import singapore from "@/assets/singapore.jpg";
+import who from "@/assets/who.png"
+import expertise from  "@/assets/expertise.png"
+import mission from "@/assets/mission.png"
 import banner from "@/assets/banner.jpg";
-import { FaChevronRight } from "react-icons/fa";
+import Link from "next/link";
+// import background from "@/assets/background.png"
+// import { FaChevronRight } from "react-icons/fa";
 const branchs = [
   {
-    country: "Singapore",
-    company: "Payy Pte",
-    UEN: "202218135M",
-    image: singapore,
+    country: "Who Are We",
+    company: "At Fast Tech, we are dedicated technology innovators delivering personalized IT solutions that empower businesses to thrive in a rapidly evolving digital landscape and maintain a competitive edge.",
+    UEN: "",
+    image: who,
   },
   {
-    country: "Canada",
-    company: "Payy Pte",
-    UEN: "202218135M",
-    image: indonesia,
+    country: "Our Expertise",
+    company: "We specialize in bespoke software development, comprehensive IT solutions, and advanced CRM systems, leveraging cutting-edge technologies to deliver scalable, secure solutions tailored to each client's unique needs.",
+    UEN: "",
+    image: expertise,
   },
   {
-    country: "Malaysia",
-    company: "Payy Pte",
-    UEN: "202218135M",
-    image: malaysia,
+    country: "Our Mission",
+    company: "Our mission at Fast Tech is to empower businesses with transformative technology solutions, fostering enduring partnerships and providing strategic guidance to enhance efficiency and drive innovation for your growth.",
+    UEN: "",
+    image: mission,
   },
 ];
 export default function Seciton1() {
   return (
     <div className=" flex flex-col w-full max-w-[1500px] ">
       {/* Header Section */}
-      <div className="relative bg-cover bg-center h-[80vh] md:h-[55vh] bg-white overflow-hidden transition-all duration-300 ">
-        <div className="absolute inset-0 w-[70vw] bg-right bg-contain  bg-no-repeat z-10 md:z-0 opacity-80 md:opacity-100  bg-sail-900 stroke-none " />
-        <div className="absolute inset-0 flex flex-col justify-center items-start pl-10 md:pl-[125px] text-left text-white shadow-lg z-20">
-          <h3 className="hidden md:block md:text-base tracking-wide uppercase mb-4">
-            Solutions of the Day
-          </h3>
-          <h1 className="text-xl md:text-4xl mb-4 font-extralight">FINANCE TECHNOLOGY</h1>
-          <h2 className="text-5xl md:text-5xl font-extrabold ">FINTECH</h2>
-          <hr className="w-[100px] border-sail-200 border-2 my-10" />
-
-          <a
-            href="#get-started"
-            className="bg-none border-2 flex items-center gap-2 justify-center text-white hover:text-sail-500 px-10 py-3 font-semibold shadow-md hover:bg-gray-100 transition duration-200"
-          >
-            GET STARTED <FaChevronRight />
-          </a>
+      <div
+        className="hero min-h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${banner.src})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          opacity: 0.7,
+        }}
+      >
+        <div className="hero-overlay bg-black bg-opacity-70"></div>
+        <div className="hero-content text-neutral-content text-center">
+          <div className="max-w-md">
+            <h1 className="mb-10 text-6xl font-bold text-white drop-shadow-lg">
+              Fast-Tech
+            </h1>
+            <p className="mb-5 text-3xl text-white drop-shadow-lg">
+              Revolutionizing the Way the World Manages Money
+            </p>
+            <Link href="/contact-us/"> 
+              <button className="btn bg-[#008080] hover:bg-orange-700 text-white px-6 py-3 rounded-lg">
+                Get In Touch
+              </button>
+            </Link>
+          </div>
         </div>
-        <Image
-          src={banner}
-          alt="Banner"
-          className="absolute h-full w-full md:z-10 z-0  bg-red-400 md:w-[50%] md:h-[80%] md:right-10 md:top-[10%] object-cover"
-          width={500}
-          height={400}
-        />
-        {/* Text Overlay */}
       </div>
-      <div className="bg-white flex justify-center flex-col gap-4 min-h-[30vh]">
+
+      <div className="bg-white flex justify-center flex-col gap-4 min-h-[30vh] py-4">
         <div className="flex flex-col items-center gap-6 mt-10">
           {/* <hr className="w-full border-2" /> */}
           <p className="text-3xl text-sail-700 w-full text-center">
-            GROUP OF COMPANIES
+            About Us
           </p>
           <hr className="w-[60px] border-sail-400 border-2" />
         </div>

@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import logo from '../../assets/payy.png'
+import logo from '../../assets/Fast-Tech.png'
 import { IoMdMenu } from "react-icons/io";
 import Image from "next/image";
 import SideBar from "./SideBar";
@@ -8,7 +8,7 @@ import { useState } from "react";
 const link = [
   { href: "/", label: "Home" },
   { href: "/our-services", label: "Our Services" },
-  { href: "/our-app", label: "OUR APP" },
+  // { href: "/our-app", label: "OUR APP" },
   // { href: "/contact-us", label: "Privacy Policies" },
   { href: "/contact-us", label: "Contact Us" },
 ];
@@ -26,7 +26,7 @@ const NavBar: React.FC = () => {
       <nav className="bg-white w-screen p-5 shadow-md fixed z-20">
         <div className="container mx-auto flex justify-between items-center max-w-[900px] text-sm font-light">
           <div className="font-bold text-lg">
-            <Image src={logo} alt="Payy" width={70} height={70} />
+            <Image src={logo} alt="Payy" width={150} height={150} />
           </div>
           <ul className="hidden md:flex space-x-10 ">
             {link.map((item, index) => (

@@ -1,69 +1,77 @@
 import React from "react";
-import malaysia from "../../assets/malaysia.png";
-import indonesia from "../../assets/indonesia.png";
-import singapore from "../../assets/singapore.jpg";
-const OurServices = () => {
+import customSoftwareImg from "@/assets/softaware.png"; // Adjust the path as necessary
+import crmSystemsImg from "@/assets/crm.png"; // Adjust the path as necessary
+import approachImg from "@/assets/approach.png"; // Adjust the path as necessary
+import Image from "next/image";
+
+const OurSections = () => {
+  const sections = [
+    {
+      title: "Custom Software Development",
+      description:
+        "We create bespoke software solutions tailored to your business needs. Our expert developers deliver innovative, scalable, and secure applications, including mobile, web, and enterprise software, to enhance efficiency and productivity.",
+      textBg: "bg-[#5CAED4]",
+      textColor: "text-[#fffff]",
+      reverse: false,
+      image: customSoftwareImg,
+    },
+    {
+      title: "Advanced CRM Systems",
+      description:
+        "Enhance customer relationships with our tailored CRM solutions. Our systems streamline sales, marketing, and service processes, providing valuable insights to improve engagement and drive business growth.",
+      textBg: "bg-[#5CAED4]",
+      textColor: "text-[#fffff]",
+      reverse: true,
+      image: crmSystemsImg,
+    },
+    {
+      title: "Our Approach",
+      description:
+        "We take a personalized approach to each client's needs, working closely with them to understand their unique challenges and develop customized solutions.",
+      textBg: "bg-[#5CAED4]",
+      textColor: "text-[#fffff]",
+      reverse: false,
+      image: approachImg,
+    },
+  ];
+
   return (
-    <div className="flex w-full flex-col items-center md:items-start justify-start pt-20 min-h-screen max-w-[1200px]">
-      <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-700 text-white w-full py-4">OUR SERVICES</h1>
-      
-      <div className="w-full flex relative">
+    <div className="flex flex-col w-full max-w-[1500px] bg-gray-50 min-h-screen mt-14 py-5">
+      <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-300 text-white w-full py-5">
+        Our Services
+      </h1>
+
+      {sections.map((section, index) => (
         <div
-          className="w-full md:w-2/3 h-[500px] bg-cover relative"
-          style={{
-            backgroundImage: `url(${malaysia.src})`,
-          }}
+          key={index}
+          className={`flex flex-col md:flex-row ${
+            section.reverse ? "md:flex-row-reverse" : ""
+          } w-full max-w-[1800px] items-center shadow-lg rounded-lg overflow-hidden mb-7`}
         >
-          <div className="absolute top-0 left-0 w-full h-full bg-gray-700 md:opacity-0 opacity-60 transition-all duration-300 "></div>
-        </div>
-        <div className="w-full absolute md:relative  md:w-1/3 text-white md:text-gray-500 min-h-[500px] flex flex-col justify-start items-end text-end p-10 bg-none md:bg-white">
-          <div className="text-4xl uppercase">Payment processing solutions</div>
-          <div className="font-light mt-4 uppercase text-md w-full">
-            Our payment processing solutions are designed to help businesses of
-            all sizes accept payments from customers easily and securely. Our
-            platform includes features such as card processing, e-wallets, and
-            mobile payments, among others.
+          <div
+            className={`w-full md:w-1/2 p-6 md:p-10 ${section.textBg} text-white flex flex-col justify-center`}
+            style={{ minHeight: "300px" }}
+          >
+            <h1 className={`text-xl md:text-3xl font-bold ${section.textColor}`}>
+              {section.title}
+            </h1>
+            <p className="mt-4 text-sm md:text-lg font-light">
+              {section.description}
+            </p>
+          </div>
+
+          <div className="w-full md:w-1/2 h-[200px] md:h-[300px] relative">
+            <Image
+              src={section.image}
+              alt={section.title}
+              layout="fill" 
+              objectFit="cover" 
+            />
           </div>
         </div>
-      </div>
-      <div className="w-full flex relative">
-       
-        <div className="w-full absolute md:relative z-10 md:w-2/5 text-white md:text-gray-500 min-h-[500px] flex flex-col justify-start items-start text-start p-10 bg-none md:bg-white">
-          <div className="text-4xl uppercase">Compliance and risk management solutions</div>
-          <div className="font-light mt-4 uppercase text-md w-full">
-          We offer a range of compliance and risk management solutions to help businesses navigate complex regulatory environments and reduce their exposure to risk.
-          </div>
-        </div>
-        <div
-          className="w-full md:w-3/5 bg-slate-500 h-[500px] bg-cover relative"
-          style={{
-            backgroundImage: `url(${indonesia.src})`,
-          }}
-        >
-          <div className="absolute top-0 left-0 w-full h-full bg-gray-700 md:opacity-0 opacity-60 transition-all duration-300 "></div>
-          </div>
-      </div>
-      <div className="w-full flex relative">
-        <div
-          className="w-full md:w-2/3 bg-slate-500 h-[500px] bg-cover relative"
-          style={{
-            backgroundImage: `url(${singapore.src})`,
-          }}
-        >
-          <div className="absolute top-0 left-0 w-full h-full bg-gray-700 md:opacity-0 opacity-60 transition-all duration-300 "></div>
-          </div>
-        <div className="w-full absolute md:relative  md:w-1/3 text-white md:text-gray-500 min-h-[500px] flex flex-col justify-start items-end text-end p-10 bg-none md:bg-white ">
-          <div className="text-4xl uppercase">Payment processing solutions</div>
-          <div className="font-light mt-4 uppercase text-md w-full">
-            Our payment processing solutions are designed to help businesses of
-            all sizes accept payments from customers easily and securely. Our
-            platform includes features such as card processing, e-wallets, and
-            mobile payments, among others.
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
 
-export default OurServices;
+export default OurSections;
