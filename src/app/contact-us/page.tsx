@@ -6,7 +6,7 @@ export default function ContactUs() {
       <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-300 text-white w-full py-4">
         CONTACT US
       </h1>
-      <form target="_blank" action="https://formsubmit.co/contact@payyservices.com" method="POST">
+      <form target="_blank" action="https://formsubmit.co/contact@fast-tech.co method="POST">
         <div className="w-full h-full flex flex-col md:flex-row">
           <div className="bg-white w-full md:w-2/3 flex flex-col justify-start p-10 gap-4">
             <div>
@@ -48,7 +48,7 @@ export default function ContactUs() {
           <div className="bg-[#BADBED] w-full md:w-1/3 h-full flex flex-col justify-end p-10 gap-4">
             <div className="text-end flex flex-col">
               <p className="text-2xl text-white">Email</p>
-              <p className="text-gray-100">contact@payyservices.com</p>
+              <p className="text-gray-100">contact@fast-tech.co</p>
             </div>
           </div>
         </div>
