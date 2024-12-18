@@ -16,18 +16,13 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
       title: "OUR SERVICES",
       path: "/our-services",
     },
-    {
-      title: "OUR APP",
-      path: "/our-app",
-    },
+    // {
+    //   title: "OUR APP",
+    //   path: "/our-app",
+    // },
     {
       title: "CONTACT US",
       path: "/contact-us",
-    },
-
-    {
-      title: "PRIVACY POLICY",
-      path: "/privacy-policy",
     },
   ];
   const router = useRouter();

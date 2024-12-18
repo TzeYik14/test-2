@@ -1,43 +1,43 @@
 import React from "react";
-import payment from "@/assets/payment.png"
-import risk from "@/assets/risk.png"
-import fintech from"@/assets/fintech.png"
+import customSoftwareImg from "@/assets/softaware.png"; // Adjust the path as necessary
+import crmSystemsImg from "@/assets/crm.png"; // Adjust the path as necessary
+import approachImg from "@/assets/approach.png"; // Adjust the path as necessary
 import Image from "next/image";
 
 const OurSections = () => {
   const sections = [
     {
-      title: "Payment Processing Solutions",
+      title: "Custom Software Development",
       description:
-        "Our payment processing solutions are designed to help businesses of all sizes accept payments from customers easily and securely. Our platform includes features such as card processing, e-wallets, and mobile payments, among others.",
-      textBg: "bg-[#fffff]",
-      textColor: "text-[#000000]",
+        "We create bespoke software solutions tailored to your business needs. Our expert developers deliver innovative, scalable, and secure applications, including mobile, web, and enterprise software, to enhance efficiency and productivity.",
+      textBg: "bg-[#5CAED4]",
+      textColor: "text-[#fffff]",
       reverse: false,
-      image: payment,
+      image: customSoftwareImg,
     },
     {
-      title: "Compliance and Risk Management Solutions",
+      title: "Advanced CRM Systems",
       description:
-        "We offer a range of compliance and risk management solutions to help businesses navigate complex regulatory environments and reduce their exposure to risk.",
-      textBg: "bg-[#fffff]",
-      textColor: "text-[#000000]",
+        "Enhance customer relationships with our tailored CRM solutions. Our systems streamline sales, marketing, and service processes, providing valuable insights to improve engagement and drive business growth.",
+      textBg: "bg-[#5CAED4]",
+      textColor: "text-[#fffff]",
       reverse: true,
-      image: risk,
+      image: crmSystemsImg,
     },
     {
-      title: "Custom Fintech Solutions",
+      title: "Our Approach",
       description:
         "We take a personalized approach to each client's needs, working closely with them to understand their unique challenges and develop customized solutions.",
-      textBg: "bg-[#fffff]",
-      textColor: "text-[#000000]",
+      textBg: "bg-[#5CAED4]",
+      textColor: "text-[#fffff]",
       reverse: false,
-      image: fintech,
+      image: approachImg,
     },
   ];
 
   return (
     <div className="flex flex-col w-full max-w-[1500px] bg-gray-50 min-h-screen mt-14 py-5">
-      <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-300 text-white w-full py-5 border-b border-gray-300">
+      <h1 className="text-5xl mb-10 font-light pl-10 bg-sail-300 text-white w-full py-5">
         Our Services
       </h1>
 
@@ -46,10 +46,10 @@ const OurSections = () => {
           key={index}
           className={`flex flex-col md:flex-row ${
             section.reverse ? "md:flex-row-reverse" : ""
-          } w-full max-w-[1800px] items-center shadow-lg rounded-none overflow-hidden mb-7`}
+          } w-full max-w-[1800px] items-center shadow-lg rounded-lg overflow-hidden mb-7`}
         >
           <div
-            className={`w-full md:w-1/2 p-6 md:p-10 ${section.textBg} text-black flex flex-col justify-center`}
+            className={`w-full md:w-1/2 p-6 md:p-10 ${section.textBg} text-white flex flex-col justify-center`}
             style={{ minHeight: "300px" }}
           >
             <h1 className={`text-xl md:text-3xl font-bold ${section.textColor}`}>

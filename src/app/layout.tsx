@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Payy.services",
+  title: "Fast-Tech",
   description: "Financial Technology Services",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Payy.services</title>
+        <title>Fast-tech</title>
         <meta name="description" content={'metadata.description'} />
       </head>
       <body className={inter.className}>
