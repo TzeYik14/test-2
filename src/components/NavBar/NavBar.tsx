@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import logo from '../../assets/Fast-Tech.png'
+import logo from '../../assets/payy.png'
 import { IoMdMenu } from "react-icons/io";
 import Image from "next/image";
 import SideBar from "./SideBar";
@@ -8,8 +8,8 @@ import { useState } from "react";
 const link = [
   { href: "/", label: "Home" },
   { href: "/our-services", label: "Our Services" },
-  // { href: "/our-app", label: "OUR APP" },
-  // { href: "/contact-us", label: "Privacy Policies" },
+  { href: "/our-app", label: "OUR APP" },
+  { href: "/privacy-policy", label: "Privacy Policies" },
   { href: "/contact-us", label: "Contact Us" },
 ];
 

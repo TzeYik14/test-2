@@ -1,33 +1,30 @@
 import Image from "next/image";
-// import fintechImage from "@/assets/fintech.png"; // Ensure the path is correct
-// import malaysia from "@/assets/malaysia.png";
-// import indonesia from "@/assets/indonesia.png";
-// import singapore from "@/assets/singapore.jpg";
-import who from "@/assets/who.png"
-import expertise from  "@/assets/expertise.png"
-import mission from "@/assets/mission.png"
+import canada from "@/assets/canda.jpg"
+import london from "@/assets/london.jpg"
+import singapore from "@/assets/singapore.jpg";
 import banner from "@/assets/banner.jpg";
 import Link from "next/link";
+
 // import background from "@/assets/background.png"
 // import { FaChevronRight } from "react-icons/fa";
 const branchs = [
   {
-    country: "Who Are We",
-    company: "At Fast Tech, we are dedicated technology innovators delivering personalized IT solutions that empower businesses to thrive in a rapidly evolving digital landscape and maintain a competitive edge.",
-    UEN: "",
-    image: who,
+    country: "Singapore",
+    company: "Payy Pte Ltd",
+    UEN: "202218135M",
+    image: singapore,
   },
   {
-    country: "Our Expertise",
-    company: "We specialize in bespoke software development, comprehensive IT solutions, and advanced CRM systems, leveraging cutting-edge technologies to deliver scalable, secure solutions tailored to each client's unique needs.",
-    UEN: "",
-    image: expertise,
+    country: "Canada",
+    company: "Payy Services Inc",
+    UEN: "1000215199",
+    image: canada,
   },
   {
-    country: "Our Mission",
-    company: "Our mission at Fast Tech is to empower businesses with transformative technology solutions, fostering enduring partnerships and providing strategic guidance to enhance efficiency and drive innovation for your growth.",
-    UEN: "",
-    image: mission,
+    country: "London",
+    company: "Payy Services Ltd",
+    UEN: "14631344",
+    image: london,
   },
 ];
 export default function Seciton1() {
@@ -35,7 +32,7 @@ export default function Seciton1() {
     <div className=" flex flex-col w-full max-w-[1500px] ">
       {/* Header Section */}
       <div
-        className="hero min-h-screen flex items-center justify-center"
+        className="hero min-h-[70vh] flex items-center justify-center"
         style={{
           backgroundImage: `url(${banner.src})`,
           backgroundPosition: 'center',
@@ -47,25 +44,37 @@ export default function Seciton1() {
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-md">
             <h1 className="mb-10 text-6xl font-bold text-white drop-shadow-lg">
-              Fast-Tech
+              Payy
             </h1>
             <p className="mb-5 text-3xl text-white drop-shadow-lg">
-              Revolutionizing the Way the World Manages Money
+            Empowering Your Financial Future, One Smart Step at a Time
             </p>
-            <Link href="/contact-us/"> 
+            <Link href="/our-app">
               <button className="btn bg-[#008080] hover:bg-orange-700 text-white px-6 py-3 rounded-lg">
-                Get In Touch
+                Explore Our App
               </button>
             </Link>
           </div>
         </div>
       </div>
+      <div className="bg-gray-300 p-10 text-center">
+        <p className="text-4xl font-semibold mb-4">
+        Fintech Solutions
+        </p>
+        <p className="text-lg text-gray-700">
+        At Payy , we specialize in delivering innovative fintech solutions that empower businesses to thrive in a digital economy
+        </p>
+      </div>
+      
+      
+ 
+
 
       <div className="bg-white flex justify-center flex-col gap-4 min-h-[30vh] py-4">
         <div className="flex flex-col items-center gap-6 mt-10">
           {/* <hr className="w-full border-2" /> */}
           <p className="text-3xl text-sail-700 w-full text-center">
-            About Us
+            Group Of Companies
           </p>
           <hr className="w-[60px] border-sail-400 border-2" />
         </div>
