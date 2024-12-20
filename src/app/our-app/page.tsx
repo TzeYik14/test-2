@@ -5,8 +5,6 @@ import { FaDownload } from "react-icons/fa";
 import Image from "next/image";
 import Swipper from "@/components/SwipperShowcase"
 
-
-
 const OurServices: React.FC = () => {
 
 
