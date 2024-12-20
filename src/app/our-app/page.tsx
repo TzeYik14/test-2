@@ -66,15 +66,15 @@ const OurServices: React.FC = () => {
         </p>
 
         <p className="px-10 pb-5">
-          The registration process for our app is simple and straightforward. After downloading the app from the App Store, you'll be prompted to create an account using your personal information. We'll need your name, address, and phone number to get started.
+          The registration process for our app is simple and straightforward. After downloading the app from the App Store, you&apos;ll be prompted to create an account using your personal information. we&apos;ll need your name, address, and phone number to get started.
         </p>
 
         <p className="px-10 pb-5">
-          From there, it's time to check rates, conversion, and start sending money! Our app makes it easy to send funds to your loved ones anywhere in the world. Simply enter the recipient's information, including their name and bank account details, and the amount you wish to send. You can also choose to send a message along with your transfer to let your loved one know you're thinking of them.
+          From there, it&apos;s time to check rates, conversion, and start sending money! Our app makes it easy to send funds to your loved ones anywhere in the world. Simply enter the recipient&apos;s information, including their name and bank account details, and the amount you wish to send. You can also choose to send a message along with your transfer to let your loved one know you are thinking of them.
         </p>
 
         <p className="px-10 pb-5">
-          Our app is designed to be fast and reliable, with transfers typically completing within a matter of hours. You'll receive updates on the status of your transfer, so you can stay informed every step of the way.
+          Our app is designed to be fast and reliable, with transfers typically completing within a matter of hours. you&apos;ll receive updates on the status of your transfer, so you can stay informed every step of the way.
         </p>
 
         <p className="px-10 pb-5">
@@ -82,18 +82,18 @@ const OurServices: React.FC = () => {
         </p>
 
         <p className="px-10 pb-5">
-          And when it comes to fees, we believe in transparency. Our app offers competitive rates on the market, with no hidden fees or charges. You'll always know exactly what you're paying for, and you can feel confident that your money is being transferred at an affordable rate.
+          And when it comes to fees, we believe in transparency. Our app offers competitive rates on the market, with no hidden fees or charges. you&apos;ll always know exactly what you are paying for, and you can feel confident that your money is being transferred at an affordable rate.
         </p>
 
         <p className="px-10 pb-5">
-          And when it comes to fees, we believe in transparency. Our app offers competitive rates on the market, with no hidden fees or charges. You'll always know exactly what you're paying for, and you can feel confident that your money is being transferred at an affordable rate.
+          And when it comes to fees, we believe in transparency. Our app offers competitive rates on the market, with no hidden fees or charges. you&apos;ll always know exactly what you are paying for, and you can feel confident that your money is being transferred at an affordable rate.
         </p>
         <p className="px-10 pb-5">
           In addition to our core remittance services, our app offers a range of additional features and benefits. You can view your transaction history, track the status of your transfers, and manage your account settings all from within the app. We also offer 24/7 customer support, so you can reach out to us anytime if you have questions or concerns.
         </p>
 
         <p className="px-10 pb-5">
-          In conclusion, if you're looking for a fast, secure, and affordable way to send money overseas, our remittance app for iOS is the perfect solution. With a simple registration process, a wide range of payment options, and top-notch security features, you can feel confident that your transfers will be safe and reliable every time.
+          In conclusion, if you are looking for a fast, secure, and affordable way to send money overseas, our remittance app for iOS is the perfect solution. With a simple registration process, a wide range of payment options, and top-notch security features, you can feel confident that your transfers will be safe and reliable every time.
         </p>
 
         <h2 className="text-4xl pl-10 py-3 text-gray-300"> Why us? </h2>

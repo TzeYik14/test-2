@@ -2,7 +2,11 @@ import Image from "next/image";
 import canada from "@/assets/canda.jpg"
 import london from "@/assets/london.jpg"
 import singapore from "@/assets/singapore.jpg";
+<<<<<<< HEAD
 import background from "@/assets/background.png";
+=======
+import banner from "@/assets/banner.jpg";
+>>>>>>> 097cb8726f2b3ce2a29213aed8d11440d5ed8e22
 import Link from "next/link";
 
 // import background from "@/assets/background.png"
