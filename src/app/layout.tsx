@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fast-Tech",
+  title: "Payy.services",
   description: "Financial Technology Services",
 };
 
@@ -20,11 +20,11 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fast-tech</title>
+        <title>Payy.services</title>
         <meta name="description" content={'metadata.description'} />
       </head>
       <body className={inter.className}>
-        <NavBar />
+        <NavBar/>
         <div className="flex justify-center pt-10">{children}</div>
       </body>
     </html>
